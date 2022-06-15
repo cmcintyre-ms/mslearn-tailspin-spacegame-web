@@ -27,6 +27,7 @@ steps:
   inputs:
     verbose: false
     command: install
+    workingDir: $(wwwrootDir)
 
 - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
   displayName: 'Compile Sass assets'
